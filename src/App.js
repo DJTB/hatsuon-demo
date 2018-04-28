@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import GithubCorner from 'react-github-corner';
 import PitchPattern from './PitchPattern';
 
 const pad = 0.75;
+const bgColorHeader = '#222';
+const textColorHeader = '#fefefe';
 
 const Wrapper = styled.div`
   text-align: center;
 `;
 
 const Header = styled.header`
-  background-color: #222;
-  color: white;
+  background-color: ${bgColorHeader};
+  color: ${textColorHeader};
   font-size: 2rem;
   padding: ${pad}em;
 `;
@@ -54,6 +57,11 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
+        <GithubCorner
+          href="https://github.com/DJTB/hatsuon"
+          octoColor={bgColorHeader}
+          bannerColor={textColorHeader}
+        />
         <Header>
           <Title>発音</Title>
           <Intro>
