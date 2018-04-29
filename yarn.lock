@@ -3228,9 +3228,9 @@ hash.js@^1.0.0, hash.js@^1.0.3:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.0"
 
-hatsuon@1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/hatsuon/-/hatsuon-1.1.2.tgz#7bcfcde5a461b7de91563d0b87153ea1030b205c"
+hatsuon@1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/hatsuon/-/hatsuon-1.1.4.tgz#1143f90acd27d2c7de893747740ded98213c2836"
 
 hawk@~6.0.2:
   version "6.0.2"
@@ -5693,6 +5693,10 @@ react-github-corner@2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/react-github-corner/-/react-github-corner-2.3.0.tgz#73ab17324b670c9cd955567b09663d385cfb05ef"
 
+react-is@^16.3.1:
+  version "16.3.2"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.3.2.tgz#f4d3d0e2f5fbb6ac46450641eb2e25bf05d36b22"
+
 react-resize-detector@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/react-resize-detector/-/react-resize-detector-1.1.0.tgz#4a9831fa3caad32230478dd0185cbd2aa91a5ebf"
@@ -6577,9 +6581,9 @@ style-loader@0.19.0:
     loader-utils "^1.0.2"
     schema-utils "^0.3.0"
 
-styled-components@3.2.5:
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-3.2.5.tgz#b5d5d7d618ab240ff10602b5ca5886b8db3d0a0d"
+styled-components@3.2.6:
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-3.2.6.tgz#99e6e75a746bdedd295a17e03dd1493055a1cc3b"
   dependencies:
     buffer "^5.0.3"
     css-to-react-native "^2.0.3"
@@ -6587,6 +6591,7 @@ styled-components@3.2.5:
     hoist-non-react-statics "^2.5.0"
     is-plain-object "^2.0.1"
     prop-types "^15.5.4"
+    react-is "^16.3.1"
     stylis "^3.5.0"
     stylis-rule-sheet "^0.0.10"
     supports-color "^3.2.3"

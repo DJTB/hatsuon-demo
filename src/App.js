@@ -1,11 +1,27 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import styled, { injectGlobal } from 'styled-components';
 import GithubCorner from 'react-github-corner';
 import PitchPattern from './PitchPattern';
 
 const pad = 0.75;
 const bgColorHeader = '#222';
 const textColorHeader = '#fefefe';
+const fontEn =
+  "system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Cantarell,'Helvetica Neue',sans-serif";
+const fontJa =
+  "'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'TakaoPゴシック' , TakaoPGothic, '游ゴシック', '游ゴシック体', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ ゴシック', 'MS Gothic', HiraKakuProN-W3, 'MotoyaLCedar', 'Droid Sans Japanese', sans-serif";
+
+injectGlobal`
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: ${fontEn};
+
+    & *[lang="ja"] {
+      font-family: ${fontJa};
+    }
+  }
+`;
 
 const Wrapper = styled.div`
   text-align: center;
@@ -63,7 +79,7 @@ class App extends Component {
           bannerColor={textColorHeader}
         />
         <Header>
-          <Title>発音</Title>
+          <Title lang="ja">発音</Title>
           <Intro>
             Enter a Japanese word as hiragana and the{' '}
             <a href="https://www.weblio.jp/content/%E7%99%BA%E9%9F%B3">pitch accent number</a> to
@@ -72,6 +88,7 @@ class App extends Component {
         </Header>
         <Controls>
           <Input
+            lang="ja"
             name="reading"
             type="text"
             placeholder="よみかた"
