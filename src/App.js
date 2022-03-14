@@ -81,9 +81,8 @@ class App extends Component {
         <Header>
           <Title lang="ja">発音</Title>
           <Intro>
-            Enter a Japanese word as hiragana and the{' '}
-            <a href="https://www.weblio.jp/content/%E7%99%BA%E9%9F%B3">pitch accent number</a> to
-            visualize the word’s pronunciation.
+            Enter a Japanese word as hiragana and the pitch accent number (from
+            a Japanese dictionary) to visualize the word’s pronunciation.
           </Intro>
         </Header>
         <Controls>
